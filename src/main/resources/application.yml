@@ -1,13 +1,15 @@
 spring:
   application:
-    name: provider-user
-
+    name: eureka-provider
 server:
   port: 8001
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka/,http://127.0.0.1:8762/eureka/
   instance:
     prefer-ip-address: true
 #    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+
+info:
+  title: im a provider
