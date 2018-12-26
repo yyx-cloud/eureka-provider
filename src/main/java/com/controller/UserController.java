@@ -22,7 +22,7 @@ public class UserController {
     public Map findById(@PathVariable Long id) {
         Map map = new HashMap();
         map.put("id", id);
-        map.put("name", "name");
+        map.put("name", "provider1");
         return map;
     }
 
